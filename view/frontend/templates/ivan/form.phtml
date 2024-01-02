@@ -1,0 +1,20 @@
+<form class="<?= $block->getData('css_class') ?>"
+      action=""
+>
+  <div class="field">
+    <div class="control">
+      <label for="sku">sku</label>
+      <input type="text" name="sku" id="sku">
+    </div>
+  </div>
+  <div class="field">
+    <div class="control">
+      <label for="qty">qty</label>
+      <input type="number" name="qty" id="qty">
+    </div>
+  </div>
+
+  <?= $block->getChildHtml() ?>
+  
+  <button type="submit">submit</button>
+</form>

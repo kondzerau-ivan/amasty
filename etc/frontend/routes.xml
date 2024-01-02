@@ -4,5 +4,8 @@
         <route frontName="helloworld" id="helloworld">
             <module name="Ivan_Amasty"/>
         </route>
+        <route frontName="ivan" id="ivan">
+            <module name="Ivan_Amasty"/>
+        </route>
     </router>
 </config>

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+      <css src="Ivan_Amasty::css/style.css" />
+    </head>
+    <body>
+        <referenceContainer name="content">
+          <container name="Ivan_Amasty" htmlTag="div" htmlClass="container-add-form">
+              <block name="Ivan_Amasty.hello"  template="Ivan_Amasty::ivan/hello.phtml"/>
+              <block name="Ivan_Amasty.form" template="Ivan_Amasty::ivan/form.phtml">
+              <arguments>
+                <argument name="css_class" xsi:type="string">form</argument>
+              </arguments>
+                <block name="Ivan_Amasty.counter" template="Ivan_Amasty::ivan/counter.phtml" />
+              </block>
+          </container>
+        </referenceContainer>
+    </body>
+</page>
